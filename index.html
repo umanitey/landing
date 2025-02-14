@@ -1,52 +1,206 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site CGU</title>
-    <!-- Lien vers Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Krona+One&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body class="bg-[#0B0B28] text-white flex flex-col min-h-screen">
-    <!-- Header -->
-    <header class="flex justify-between items-center p-4">
-        <div class="logo">
-            <img src="logo.png" alt="Logo de l'application" class="h-10">
-        </div>
-        <div class="social-icons flex space-x-4">
-            <a href="#" class="hover:opacity-80">
-                <img src="twitter-logo.png" alt="Twitter" class="h-6">
-            </a>
-            <a href="#" class="hover:opacity-80">
-                <img src="discord-logo.png" alt="Discord" class="h-6">
-            </a>
-        </div>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Umanitey</title>
+    <link rel="icon" type="image/svg+xml" href="icon-umanitey.png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
 
-    <!-- Main Content -->
-    <main class="flex-grow flex flex-col items-center justify-center text-center px-4">
-        <h1 class="text-[48px] sm:text-[64px] lg:text-[72px] font-bold">Titre de l'Application</h1>
-        <p class="text-[16px] sm:text-[18px] mt-4">Sous-titre ou description de l'application</p>
-        <div class="mt-8 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
-    <div class="bg-[#D5C9FF] text-[#231F56] rounded-md w-[272px] h-[48px] flex items-center justify-center gap-2 px-6 py-3">
-        <span class="font-inter text-[14px]">télécharger sur iOS</span>
-    </div>
-    <div class="bg-[#D5C9FF] text-[#231F56] rounded-md w-[272px] h-[48px] flex items-center justify-center gap-2 px-6 py-3">
-        <span class="font-inter text-[14px]">télécharger sur Android</span>
-    </div>
-</div>
-    </main>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-    <!-- Footer -->
-    <footer class="text-center text-white py-4">
-        <a href="politique.html" class="hover:underline">Politique de confidentialité</a>
-        <span class="mx-2">|</span>
-        <a href="cgu.html" class="hover:underline">CGU</a>
-        <span class="mx-2">|</span>
-        <a href="contact.html" class="hover:underline">Contact</a>
+      body {
+        font-family: "Montserrat", sans-serif;
+        height: 100vh;
+        color: white;
+        overflow: hidden;
+      }
+
+      .container {
+        position: relative;
+        height: 100vh;
+        background: url("bg1.png");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 12px;
+      }
+
+      .main-content {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      h1 {
+        font-family: "Krona One", "Montserrat", sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.2;
+      }
+
+      .subtitle {
+        font-size: 0.9rem;
+        opacity: 0.8;
+      }
+
+      .quote {
+        color: #d5c9ff;
+        font-style: italic;
+        font-size: 0.8rem;
+      }
+
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .download-btn {
+        padding: 12px;
+        border-radius: 2px;
+        /* background-color: #d5c9ffaa; */
+        background-color: #e2daff;
+        color: #231f56;
+        text-decoration: none;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        transition: background-color 0.3s;
+      }
+
+      .download-btn:hover {
+        background-color: #fff;
+      }
+
+      .footer {
+        position: absolute;
+        padding: 12px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+      }
+
+      .footer a {
+        color: #d5c9ff;
+        text-decoration: none;
+        opacity: 0.7;
+        font-size: 0.9rem;
+      }
+
+      .footer a:hover {
+        opacity: 1;
+      }
+
+      @media (min-width: 768px) {
+        .header {
+          justify-content: space-between;
+          padding: 24px;
+        }
+
+        .main-content {
+          padding: 48px;
+          gap: 48px;
+        }
+
+        h1 {
+          font-size: 1.7rem;
+        }
+
+        .subtitle {
+          width: 50%;
+          font-size: 1.3rem;
+        }
+
+        .buttons {
+          flex-direction: row;
+        }
+
+        .download-btn {
+          padding: 0.8rem 1.5rem;
+          font-size: 1rem;
+        }
+
+        .footer {
+          flex-direction: row;
+          gap: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo"><img src="logo-umanitey.svg" alt="Umanitey" /></div>
+        <div class="social-links">
+          <a href="https://www.instagram.com/umanitey"
+            ><img src="instagram.svg" alt="Instagram.com"
+          /></a>
+          <!-- <a href=""><img src="discord.svg" alt="Discord.com" /></a> -->
+          <a href="https://x.com/umanitey"><img src="x.svg" alt="X.com" /></a>
+          <img src="flag-palestine.svg" alt="Palestine dans notre cœur" />
+        </div>
+      </header>
+
+      <main class="main-content">
+        <h1>Pour un demain plus humain</h1>
+        <p class="subtitle">
+          <!-- Découvrez cette 1ère app, dédiée à l’individu. Une expérience
+          innovante axée sur le concret et facile à adopter dans votre
+          quotidien, qui marque le commencement d’une série d’apps destinées à
+          rendre le changement accessible, à l'échelle de l'individu et,
+          bientôt, à l’échelle universelle. -->
+
+          Découvrez la 1ère, d'une série d'applications, pensée pour l'individu,
+          <br />
+          au concept innovant pour contribuer au changement
+          <br />
+          <b>concret</b> et <b>facile à intégrer dans votre quotidien</b>.
+        </p>
+        <div class="buttons">
+          <a href="#" class="download-btn">
+            <img src="ios.svg" alt="Apple" />
+            Télécharger sur iOS
+          </a>
+          <a href="#" class="download-btn">
+            <img src="android.svg" alt="Android" />
+            Télécharger sur Android
+          </a>
+        </div>
+        <p class="quote">
+          Une graine sans terre ne peut germer, une terre sans graine ne peut
+          donner vie :
+          <br />
+          l’individu et l’universel se renforcent mutuellement pour façonner un
+          avenir florissant.
+        </p>
+      </main>
+
+      <footer class="footer">
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Conditions générales d'utilisation</a>
       </footer>
-      
-</body>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site CGU</title>
+    <!-- Lien vers Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Krona+One&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#0B0B28] text-white flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="flex justify-between items-center p-4">
+        <div class="logo">
+            <img src="logo.png" alt="Logo de l'application" class="h-10">
+        </div>
+        <div class="social-icons flex space-x-4">
+            <a href="#" class="hover:opacity-80">
+                <img src="twitter-logo.png" alt="Twitter" class="h-6">
+            </a>
+            <a href="#" class="hover:opacity-80">
+                <img src="discord-logo.png" alt="Discord" class="h-6">
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex flex-col items-center justify-center text-center px-4">
+        <h1 class="text-[48px] sm:text-[64px] lg:text-[72px] font-bold">Titre de l'Application</h1>
+        <p class="text-[16px] sm:text-[18px] mt-4">Sous-titre ou description de l'application</p>
+        <div class="mt-8 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+    <div class="bg-[#D5C9FF] text-[#231F56] rounded-md w-[272px] h-[48px] flex items-center justify-center gap-2 px-6 py-3">
+        <span class="font-inter text-[14px]">télécharger sur iOS</span>
+    </div>
+    <div class="bg-[#D5C9FF] text-[#231F56] rounded-md w-[272px] h-[48px] flex items-center justify-center gap-2 px-6 py-3">
+        <span class="font-inter text-[14px]">télécharger sur Android</span>
+    </div>
+</div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-white py-4">
+        <a href="politique.html" class="hover:underline">Politique de confidentialité</a>
+        <span class="mx-2">|</span>
+        <a href="cgu.html" class="hover:underline">CGU</a>
+        <span class="mx-2">|</span>
+        <a href="contact.html" class="hover:underline">Contact</a>
+      </footer>
+      
+</body>
+</html>

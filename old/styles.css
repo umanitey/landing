@@ -1,0 +1,18 @@
+/* Police personnalisée pour les titres */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+/* Appliquer la police générale */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Personnalisation pour les titres */
+h1 {
+    font-family: 'Krona One', cursive;
+}
+
+/* Personnalisation pour le sous-titre */
+p {
+    font-family: 'Montserrat', sans-serif;
+}
