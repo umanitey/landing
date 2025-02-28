@@ -6,7 +6,7 @@
     <title>Umanitey</title>
     <link rel="icon" type="image/svg+xml" href="icon-umanitey.png" />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
 
       * {
@@ -19,12 +19,12 @@
         font-family: "Montserrat", sans-serif;
         height: 100vh;
         color: white;
-        overflow: hidden;
+        /* overflow: hidden; */
       }
 
       .container {
         position: relative;
-        height: 100vh;
+        min-height: 100vh;
         background: url("bg1.png");
         background-size: cover;
         background-position: center;
@@ -46,13 +46,15 @@
         padding: 24px;
         display: flex;
         flex-direction: column;
+        align-items: start;
         gap: 24px;
       }
 
       h1 {
-        font-family: "Krona One", "Montserrat", sans-serif;
-        font-size: 1.5rem;
-        line-height: 1.2;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.3rem;
+        font-weight: 700;
+        line-height: 1.5;
       }
 
       .subtitle {
@@ -91,7 +93,7 @@
       }
 
       .footer {
-        position: absolute;
+        /* position: absolute; */
         padding: 12px;
         left: 0;
         right: 0;
@@ -152,7 +154,9 @@
   <body>
     <div class="container">
       <header class="header">
-        <div class="logo"><img src="logo-umanitey.svg" alt="Umanitey" /></div>
+        <div class="logo">
+          <img src="logo-umanitey.svg" height="20" alt="Umanitey" />
+        </div>
         <div class="social-links">
           <a href="https://www.instagram.com/umanitey"
             ><img src="instagram.svg" alt="Instagram.com"
@@ -164,42 +168,49 @@
       </header>
 
       <main class="main-content">
-        <h1>Pour un demain plus humain</h1>
-        <p class="subtitle">
-          <!-- Découvrez cette 1ère app, dédiée à l’individu. Une expérience
-          innovante axée sur le concret et facile à adopter dans votre
-          quotidien, qui marque le commencement d’une série d’apps destinées à
-          rendre le changement accessible, à l'échelle de l'individu et,
-          bientôt, à l’échelle universelle. -->
-
-          Découvrez la 1ère, d'une série d'applications, pensée pour l'individu,
+        <img src="ElMoslim-logo.svg" alt="ElMoslim" height="40" />
+        <h1>
+          DÉCOUVRE UNE LECTURE NOUVELLE DU CORAN,
           <br />
-          au concept innovant pour contribuer au changement
-          <br />
-          <b>concret</b> et <b>facile à intégrer dans votre quotidien</b>.
-        </p>
+          PLUS ACCESSIBLE & CAPTIVANTE
+        </h1>
         <div class="buttons">
-          <a href="#" class="download-btn">
+          <a
+            target="_blank"
+            href="https://apps.apple.com/us/app/elmoslim/id6742468663"
+            class="download-btn"
+          >
             <img src="ios.svg" alt="Apple" />
             Télécharger sur iOS
           </a>
-          <a href="#" class="download-btn">
+          <a href="android.html" class="download-btn">
             <img src="android.svg" alt="Android" />
             Télécharger sur Android
           </a>
         </div>
-        <p class="quote">
+        <div class="subtitle">OBJECTIFS DE CETTE APPLICATION :</div>
+        <p class="subtitle">
+          Faciliter la lecture grâce aux sourates découpées par sujets, avec des
+          résumés concis et rapides à lire.
+          <br /><br />
+          Renforcer la compréhension du Coran sans effort en plus grâce à un
+          résumé simple avant chaque groupe de versets du même sujet.
+          <br /><br />
+          Encourager la régularité dans la lecture du Coran grâce aux sujets
+          accessibles à lire quotidiennement.
+        </p>
+        <!-- <p class="quote">
           Une graine sans terre ne peut germer, une terre sans graine ne peut
           donner vie :
           <br />
           l’individu et l’universel se renforcent mutuellement pour façonner un
           avenir florissant.
-        </p>
+        </p> -->
       </main>
 
       <footer class="footer">
-        <a href="#">Politique de confidentialité</a>
-        <a href="#">Conditions générales d'utilisation</a>
+        <a href="politique.html">Politique de confidentialité</a>
+        <a href="cgu.html">Conditions générales d'utilisation</a>
       </footer>
     </div>
   </body>

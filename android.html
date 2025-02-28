@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Téléchargement Android - ElMoslim</title>
+    <link rel="icon" type="image/svg+xml" href="icon-umanitey.png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: #0b0b28;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      .container {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        padding: 12px;
+      }
+
+      .content {
+        color: white;
+        border-radius: 1rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        padding: 12px;
+        width: 100%;
+        max-width: 800px;
+      }
+
+      h1 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      h2 {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        color: #d5c9ff;
+      }
+
+      p {
+        margin-top: 1rem;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+
+      .steps {
+        margin: 2rem 0;
+      }
+
+      .step {
+        margin-bottom: 1.5rem;
+        padding-left: 1rem;
+        border-left: 3px solid #d5c9ff;
+      }
+
+      .step-number {
+        font-weight: 700;
+        color: #d5c9ff;
+        margin-right: 0.5rem;
+      }
+
+      .warning {
+        background-color: rgba(213, 201, 255, 0.1);
+        border-left: 4px solid #d5c9ff;
+        padding: 1rem;
+        margin: 1.5rem 0;
+        border-radius: 0 0.5rem 0.5rem 0;
+      }
+
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+        margin: 2rem 0;
+        border-radius: 0.5rem;
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      .download-button {
+        display: inline-block;
+        margin-top: 1.5rem;
+        padding: 1rem 2rem;
+        background-color: #e2daff;
+        color: #231f56;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 2px;
+        transition: background-color 0.3s;
+      }
+
+      .download-button:hover {
+        background-color: #fff;
+      }
+
+      footer {
+        background-color: #0b0b28;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      footer a {
+        color: white;
+        text-decoration: none;
+        margin: 0 1rem;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      .header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 16px;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 12px;
+        margin-left: auto;
+      }
+
+      ol {
+        padding-left: 1.5rem;
+      }
+
+      li {
+        margin-bottom: 0.75rem;
+      }
+
+      .screenshot {
+        max-width: 100%;
+        height: auto;
+        border-radius: 0.5rem;
+        margin: 1rem 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="index.html"><img src="logo-umanitey.svg" alt="Umanitey" /></a>
+      </div>
+      <div class="social-links">
+        <a href="https://www.instagram.com/umanitey"
+          ><img src="instagram.svg" alt="Instagram.com"
+        /></a>
+        <a href="https://x.com/umanitey"><img src="x.svg" alt="X.com" /></a>
+        <img src="flag-palestine.svg" alt="Palestine dans notre cœur" />
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="content">
+        <h2>Installation sur Android</h2>
+
+        <p>
+          Merci de votre intérêt pour ElMoslim ! Notre application n'est pas
+          encore disponible sur le Google Play Store, mais vous pouvez
+          l'installer directement via notre fichier APK sécurisé.
+        </p>
+
+        <div class="info">
+          <p>
+            En bas de page, une <b>vidéo explicative</b> est disponible pour
+            vous guider dans l'installation.
+          </p>
+        </div>
+
+        <div class="warning">
+          <p>
+            <strong>Note importante :</strong> L'installation d'applications en
+            dehors du Play Store nécessite quelques étapes supplémentaires pour
+            des raisons de sécurité. Ces étapes sont standards sur Android et
+            protègent votre appareil.
+          </p>
+        </div>
+
+        <h2>Procédure d'installation</h2>
+
+        <div class="steps">
+          <div class="step">
+            <p>
+              <span class="step-number">1.</span> Téléchargez le fichier APK en
+              cliquant sur le bouton ci-dessous :
+            </p>
+            <a href="app-release.apk" class="download-button">Télécharger</a>
+          </div>
+
+          <div class="step">
+            <p>
+              <span class="step-number">2.</span> Lorsque le téléchargement
+              commence, votre navigateur pourrait vous avertir que "ce type de
+              fichier peut être dangereux". C'est un message standard pour tous
+              les APK. Cliquez sur <b>"Télécharger quand même"</b>.
+            </p>
+          </div>
+
+          <div class="step">
+            <p>
+              <span class="step-number">3.</span> Une fois le téléchargement
+              terminé, ouvrez le fichier APK.
+            </p>
+          </div>
+
+          <div class="step">
+            <p>
+              <span class="step-number">4.</span> Si c'est la première fois que
+              vous installez une application hors Play Store, Android vous
+              demandera d'autoriser l'installation depuis cette source :
+            </p>
+            <ol>
+              <li>
+                Dans la fenêtre qui s'affiche, appuyez sur <b>"Paramètres"</b>
+              </li>
+              <li>Activez l'option <b>"Autoriser depuis cette source"</b></li>
+              <li>Revenez à l'écran précédent (bouton retour)</li>
+            </ol>
+          </div>
+
+          <div class="step">
+            <p>
+              <span class="step-number">5.</span> Appuyez sur <b>"Installer"</b>
+              et attendez la fin de l'installation
+            </p>
+          </div>
+
+          <div class="step">
+            <p>
+              <span class="step-number">6.</span> Félicitations ! Vous avez
+              installé ElMoslim avec succès.
+            </p>
+          </div>
+        </div>
+
+        <h2>Vidéo explicative</h2>
+        <p>
+          Si vous préférez suivre un guide visuel, voici une vidéo qui explique
+          pas à pas comment installer ElMoslim sur votre appareil Android :
+        </p>
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/tLpNiml3TLE?si=7EbPuq4jGW7mEQ8R&amp;start=22"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <p>Une autre vidéo explicative est disponible ici :</p>
+        <div class="video-container"></div>
+
+        <h2>Questions fréquentes</h2>
+
+        <h3 style="margin-top: 1.5rem; color: #d5c9ff">
+          Est-ce sécurisé d'installer cette application ?
+        </h3>
+        <p>
+          Oui, notre APK est signé numériquement par nos soins et ne contient
+          aucun code malveillant. L'avertissement que vous voyez est standard
+          pour toute application installée en dehors du Play Store.
+        </p>
+
+        <h3 style="margin-top: 1.5rem; color: #d5c9ff">
+          Pourquoi l'application n'est pas sur le Play Store ?
+        </h3>
+        <p>
+          Notre application est actuellement en phase de validation finale pour
+          le Google Play Store. Plutôt que de retarder son lancement, nous avons
+          choisi de la rendre disponible directement via APK pour vous permettre
+          d'en profiter dès maintenant.
+        </p>
+
+        <h3 style="margin-top: 1.5rem; color: #d5c9ff">
+          Comment recevoir les mises à jour ?
+        </h3>
+        <p>
+          Pour le moment, vous devrez revisiter cette page pour télécharger les
+          nouvelles versions. Une fois disponible sur le Play Store, vous
+          pourrez bénéficier des mises à jour automatiques.
+        </p>
+
+        <h3 style="margin-top: 1.5rem; color: #d5c9ff">
+          J'ai un problème avec l'installation, que faire ?
+        </h3>
+        <p>
+          Si vous rencontrez des difficultés, n'hésitez pas à nous contacter via
+          notre
+          <a
+            href="contact.html"
+            style="color: #d5c9ff; text-decoration: underline"
+            >page de contact</a
+          >
+          ou nos réseaux sociaux.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <a href="index.html">Accueil</a>
+      <a href="politique.html">Politique de confidentialité</a>
+      <a href="cgu.html">CGU</a>
+    </footer>
+  </body>
+</html>
